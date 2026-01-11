@@ -1,6 +1,6 @@
-# 🚀 Pump.fun Cardano Frontend
+# 🚀 Pump.cardano Frontend
 
-Giao diện web cho Pump.fun bonding curve DEX trên Cardano, được xây dựng với Next.js và Mesh SDK.
+Giao diện web cho Pump.cardano, được xây dựng với Next.js và Mesh SDK.
 
 ## ✨ Tính Năng
 
@@ -128,45 +128,6 @@ npm run export
 
 # Upload dist/ folder to your hosting
 ```
-
-## 🔗 Tích Hợp Smart Contract
-
-Frontend này được thiết kế để hoạt động với:
-
-- **Validator**: `validators/pump.ak`
-- **Offchain**: `offchain/src/*.ts`
-- **Network**: Cardano Preprod/Mainnet
-
-### Workflow Tích Hợp
-
-1. **Mint**: Frontend → `mint-tokens.ts` → Blockchain
-2. **Buy**: Frontend → `buy-tokens.ts` → Blockchain  
-3. **Sell**: Frontend → `sell-tokens.ts` → Blockchain
-
-## 🛡️ Bảo Mật
-
-- ✅ Client-side validation
-- ✅ Slippage protection (5%)
-- ✅ Input sanitization
-- ✅ Error handling
-- ✅ Transaction confirmation
-
-## 🐛 Troubleshooting
-
-### "Wallet not connected"
-- Đảm bảo ví đã được cài đặt
-- Refresh trang và thử lại
-- Kiểm tra network (Preprod/Mainnet)
-
-### "Pool not found"
-- Kiểm tra Policy ID và Script Address
-- Đảm bảo pool đã được mint thành công
-- Verify trên Cardano Explorer
-
-### "Transaction failed"
-- Kiểm tra balance ADA
-- Đảm bảo có đủ token để bán
-- Thử giảm slippage tolerance
 
 ## 📞 Hỗ Trợ
 
